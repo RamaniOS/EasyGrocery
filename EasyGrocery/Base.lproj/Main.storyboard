@@ -14,10 +14,29 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VZg-8L-n1a">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="dTS-LZ-De3"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="0qM-Q8-mmQ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VZg-8L-n1a" secondAttribute="trailing" id="Gh5-2X-VdQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VZg-8L-n1a" secondAttribute="bottom" id="Kln-0e-J4x"/>
+                            <constraint firstItem="VZg-8L-n1a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="v4s-XU-W3L"/>
+                            <constraint firstItem="VZg-8L-n1a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vzT-RI-6Z1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="rZ7-ws-pUE"/>
+                    <connections>
+                        <outlet property="tableView" destination="VZg-8L-n1a" id="4dY-Dn-gvD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

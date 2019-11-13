@@ -10,8 +10,10 @@ import UIKit
 
 class GroceryListView: UIViewController {
     
-    var presenter: GroceryListPresenterProtocol?
+    @IBOutlet weak private var tableView: UITableView!
     
+    var presenter: GroceryListPresenterProtocol?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         initViews()
@@ -19,6 +21,7 @@ class GroceryListView: UIViewController {
     
     private func initViews() {
         presenter?.viewDidLoad()
+        tableView.tableFooterView = UIView()
         title = "Grocery List"
         navigationController?.navigationBar.prefersLargeTitles = true
     }
@@ -28,3 +31,16 @@ extension GroceryListView: GroceryListViewProtocol {
     
 }
 
+/*
+ Manage table view data source and delegate functions
+ */
+extension GroceryListView: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+}
