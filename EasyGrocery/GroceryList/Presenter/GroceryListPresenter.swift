@@ -6,6 +6,17 @@
 //  Copyright © 2019 Ramanpreet Singh. All rights reserved.
 //
 
-class GroceryListPresenter {
+class GroceryListPresenter: GroceryListPresenterProtocol {
+    
+    func viewDidLoad() {
+        
+    }
+    
+    weak var view: GroceryListViewProtocol?
+    var interactor: GroceryListInteractorInputProtocol?
+    var wireFrame: GroceryListWireFrameProtocol?
+}
+
+extension GroceryListPresenter: GroceryListInteractorOutputProtocol {
     
 }

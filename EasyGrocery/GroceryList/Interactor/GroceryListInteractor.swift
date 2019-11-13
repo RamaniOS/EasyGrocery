@@ -6,6 +6,14 @@
 //  Copyright © 2019 Ramanpreet Singh. All rights reserved.
 //
 
-class GroceryListInteractor {
+class GroceryListInteractor: GroceryListInteractorInputProtocol {
+    
+    weak var presenter: GroceryListInteractorOutputProtocol?
+    
+    func retrievePostList() {
+    }
+}
+
+extension GroceryListInteractor: GroceryListInteractorOutputProtocol {
     
 }

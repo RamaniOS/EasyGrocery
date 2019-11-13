@@ -16,6 +16,7 @@
 		BC323F8D237C6DB40056B7BE /* GroceryListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC323F8C237C6DB40056B7BE /* GroceryListProtocols.swift */; };
 		BC323F8F237C6DE10056B7BE /* GroceryListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC323F8E237C6DE10056B7BE /* GroceryListPresenter.swift */; };
 		BC323F91237C6E140056B7BE /* GroceryListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC323F90237C6E140056B7BE /* GroceryListInteractor.swift */; };
+		BC323F93237C71DE0056B7BE /* GroceryListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC323F92237C71DE0056B7BE /* GroceryListWireFrame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BC323F8C237C6DB40056B7BE /* GroceryListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListProtocols.swift; sourceTree = "<group>"; };
 		BC323F8E237C6DE10056B7BE /* GroceryListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListPresenter.swift; sourceTree = "<group>"; };
 		BC323F90237C6E140056B7BE /* GroceryListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListInteractor.swift; sourceTree = "<group>"; };
+		BC323F92237C71DE0056B7BE /* GroceryListWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListWireFrame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +79,11 @@
 			isa = PBXGroup;
 			children = (
 				BC323F7E237C6CD00056B7BE /* DataManager */,
-				BC323F7F237C6CD00056B7BE /* Presenter */,
-				BC323F81237C6CD00056B7BE /* WireFrame */,
-				BC323F82237C6CD00056B7BE /* View */,
-				BC323F84237C6CD00056B7BE /* Protocols */,
 				BC323F85237C6CD00056B7BE /* Interactor */,
+				BC323F7F237C6CD00056B7BE /* Presenter */,
+				BC323F84237C6CD00056B7BE /* Protocols */,
+				BC323F82237C6CD00056B7BE /* View */,
+				BC323F81237C6CD00056B7BE /* WireFrame */,
 			);
 			path = GroceryList;
 			sourceTree = "<group>";
@@ -104,6 +106,7 @@
 		BC323F81237C6CD00056B7BE /* WireFrame */ = {
 			isa = PBXGroup;
 			children = (
+				BC323F92237C71DE0056B7BE /* GroceryListWireFrame.swift */,
 			);
 			path = WireFrame;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC323F91237C6E140056B7BE /* GroceryListInteractor.swift in Sources */,
+				BC323F93237C71DE0056B7BE /* GroceryListWireFrame.swift in Sources */,
 				BC323F61237C698D0056B7BE /* AppDelegate.swift in Sources */,
 				BC323F8F237C6DE10056B7BE /* GroceryListPresenter.swift in Sources */,
 				BC323F8D237C6DB40056B7BE /* GroceryListProtocols.swift in Sources */,
