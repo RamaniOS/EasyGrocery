@@ -16,11 +16,13 @@ class GroceryListWireFrame: GroceryListWireFrameProtocol {
             let presenter = GroceryListPresenter()
             let interactor = GroceryListInteractor()
             let router = GroceryListWireFrame()
+            let localDataManager = LocalDataManager()
             view.presenter = presenter
             presenter.view = view
             presenter.interactor = interactor
             presenter.wireFrame = router
             interactor.presenter = presenter
+            interactor.localDataManager = localDataManager
             return navController
         }
         return navController

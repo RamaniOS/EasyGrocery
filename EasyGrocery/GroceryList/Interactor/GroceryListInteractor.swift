@@ -9,11 +9,10 @@
 class GroceryListInteractor: GroceryListInteractorInputProtocol {
     
     weak var presenter: GroceryListInteractorOutputProtocol?
+    var localDataManager: GroceryListLocalDataManagerInputProtocol?
     
-    func retrievePostList() {
+    func retrieveGroceryList() {
+        let data = localDataManager?.retrieveGroceryList()
+        presenter?.didRetrieveGrocery(data ?? [])
     }
-}
-
-extension GroceryListInteractor: GroceryListInteractorOutputProtocol {
-    
 }

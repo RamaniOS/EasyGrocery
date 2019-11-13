@@ -13,7 +13,8 @@ class GroceryListView: UIViewController {
     @IBOutlet weak private var tableView: UITableView!
     
     var presenter: GroceryListPresenterProtocol?
-
+    var items: [Grocery] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initViews()
@@ -28,7 +29,10 @@ class GroceryListView: UIViewController {
 }
 
 extension GroceryListView: GroceryListViewProtocol {
-    
+    func showGroceryList(with grocery: [Grocery]) {
+        items = grocery
+        tableView.reloadData()
+    }
 }
 
 /*
@@ -37,10 +41,18 @@ extension GroceryListView: GroceryListViewProtocol {
 extension GroceryListView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
+        cell.accessoryType = .disclosureIndicator
+        cell.textLabel?.text = items[indexPath.row].title
+        cell.detailTextLabel?.text = items[indexPath.row].desc
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

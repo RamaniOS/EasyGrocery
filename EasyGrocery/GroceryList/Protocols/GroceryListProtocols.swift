@@ -34,11 +34,12 @@ protocol GroceryListInteractorInputProtocol: class {
     var presenter: GroceryListInteractorOutputProtocol? { get set }
     
     // PRESENTER -> INTERACTOR
-    func retrievePostList()
+    func retrieveGroceryList()
 }
 
 protocol GroceryListInteractorOutputProtocol: class {
-    
+    // INTERACTOR -> PRESENTER
+    func didRetrieveGrocery(_ grocery: [Grocery])
 }
 
 /*
@@ -46,4 +47,14 @@ GroceryList view protocols
 */
 protocol GroceryListViewProtocol: class {
     var presenter: GroceryListPresenterProtocol? { get set }
+    // PRESENTER -> VIEW
+    func showGroceryList(with grocery: [Grocery])
+}
+
+/*
+GroceryList local data protocols
+*/
+protocol GroceryListLocalDataManagerInputProtocol: class {
+     // INTERACTOR -> LOCALDATAMANAGER
+    func retrieveGroceryList() -> [Grocery]
 }

@@ -17,6 +17,9 @@
 		BC323F8F237C6DE10056B7BE /* GroceryListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC323F8E237C6DE10056B7BE /* GroceryListPresenter.swift */; };
 		BC323F91237C6E140056B7BE /* GroceryListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC323F90237C6E140056B7BE /* GroceryListInteractor.swift */; };
 		BC323F93237C71DE0056B7BE /* GroceryListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC323F92237C71DE0056B7BE /* GroceryListWireFrame.swift */; };
+		BC7AC67B237CABA400B0EA31 /* LocalDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7AC67A237CABA400B0EA31 /* LocalDataStore.swift */; };
+		BC7AC67F237CACF900B0EA31 /* Grocery.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7AC67E237CACF900B0EA31 /* Grocery.swift */; };
+		BC7AC681237CB0AA00B0EA31 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7AC680237CB0AA00B0EA31 /* LocalDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		BC323F8E237C6DE10056B7BE /* GroceryListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListPresenter.swift; sourceTree = "<group>"; };
 		BC323F90237C6E140056B7BE /* GroceryListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListInteractor.swift; sourceTree = "<group>"; };
 		BC323F92237C71DE0056B7BE /* GroceryListWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListWireFrame.swift; sourceTree = "<group>"; };
+		BC7AC67A237CABA400B0EA31 /* LocalDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataStore.swift; sourceTree = "<group>"; };
+		BC7AC67E237CACF900B0EA31 /* Grocery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grocery.swift; sourceTree = "<group>"; };
+		BC7AC680237CB0AA00B0EA31 /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +76,10 @@
 				BC323F69237C69930056B7BE /* Assets.xcassets */,
 				BC323F6B237C69930056B7BE /* LaunchScreen.storyboard */,
 				BC323F6E237C69930056B7BE /* Info.plist */,
+				BC7AC67C237CACDE00B0EA31 /* Entities */,
 				BC323F7D237C6CD00056B7BE /* GroceryList */,
+				BC7AC679237CAB9700B0EA31 /* Store */,
+				BC7AC67D237CACE800B0EA31 /* MISC */,
 			);
 			path = EasyGrocery;
 			sourceTree = "<group>";
@@ -91,6 +100,7 @@
 		BC323F7E237C6CD00056B7BE /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				BC7AC680237CB0AA00B0EA31 /* LocalDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -133,6 +143,29 @@
 				BC323F90237C6E140056B7BE /* GroceryListInteractor.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BC7AC679237CAB9700B0EA31 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				BC7AC67A237CABA400B0EA31 /* LocalDataStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		BC7AC67C237CACDE00B0EA31 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BC7AC67E237CACF900B0EA31 /* Grocery.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		BC7AC67D237CACE800B0EA31 /* MISC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MISC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +240,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC323F91237C6E140056B7BE /* GroceryListInteractor.swift in Sources */,
+				BC7AC67B237CABA400B0EA31 /* LocalDataStore.swift in Sources */,
+				BC7AC67F237CACF900B0EA31 /* Grocery.swift in Sources */,
+				BC7AC681237CB0AA00B0EA31 /* LocalDataManager.swift in Sources */,
 				BC323F93237C71DE0056B7BE /* GroceryListWireFrame.swift in Sources */,
 				BC323F61237C698D0056B7BE /* AppDelegate.swift in Sources */,
 				BC323F8F237C6DE10056B7BE /* GroceryListPresenter.swift in Sources */,
