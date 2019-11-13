@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GroceryListView.swift
 //  EasyGrocery
 //
 //  Created by Ramanpreet Singh on 2019-11-13.
@@ -8,13 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GroceryListView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-
