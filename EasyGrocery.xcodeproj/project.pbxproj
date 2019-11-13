@@ -20,6 +20,10 @@
 		BC7AC67B237CABA400B0EA31 /* LocalDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7AC67A237CABA400B0EA31 /* LocalDataStore.swift */; };
 		BC7AC67F237CACF900B0EA31 /* Grocery.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7AC67E237CACF900B0EA31 /* Grocery.swift */; };
 		BC7AC681237CB0AA00B0EA31 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7AC680237CB0AA00B0EA31 /* LocalDataManager.swift */; };
+		BC7AC688237CB6D400B0EA31 /* GroceryDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7AC687237CB6D400B0EA31 /* GroceryDetailPresenter.swift */; };
+		BC7AC68A237CB6E100B0EA31 /* GroceryDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7AC689237CB6E100B0EA31 /* GroceryDetailProtocols.swift */; };
+		BC7AC68C237CB6FC00B0EA31 /* GroceryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7AC68B237CB6FC00B0EA31 /* GroceryDetailView.swift */; };
+		BC7AC68E237CB70A00B0EA31 /* GroceryDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7AC68D237CB70A00B0EA31 /* GroceryDetailWireFrame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		BC7AC67A237CABA400B0EA31 /* LocalDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataStore.swift; sourceTree = "<group>"; };
 		BC7AC67E237CACF900B0EA31 /* Grocery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grocery.swift; sourceTree = "<group>"; };
 		BC7AC680237CB0AA00B0EA31 /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
+		BC7AC687237CB6D400B0EA31 /* GroceryDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryDetailPresenter.swift; sourceTree = "<group>"; };
+		BC7AC689237CB6E100B0EA31 /* GroceryDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryDetailProtocols.swift; sourceTree = "<group>"; };
+		BC7AC68B237CB6FC00B0EA31 /* GroceryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryDetailView.swift; sourceTree = "<group>"; };
+		BC7AC68D237CB70A00B0EA31 /* GroceryDetailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryDetailWireFrame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 				BC323F6B237C69930056B7BE /* LaunchScreen.storyboard */,
 				BC323F6E237C69930056B7BE /* Info.plist */,
 				BC7AC67C237CACDE00B0EA31 /* Entities */,
+				BC7AC682237CB65900B0EA31 /* GroceryDetail */,
 				BC323F7D237C6CD00056B7BE /* GroceryList */,
 				BC7AC679237CAB9700B0EA31 /* Store */,
 				BC7AC67D237CACE800B0EA31 /* MISC */,
@@ -168,6 +177,49 @@
 			path = MISC;
 			sourceTree = "<group>";
 		};
+		BC7AC682237CB65900B0EA31 /* GroceryDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BC7AC686237CB6B800B0EA31 /* Presenter */,
+				BC7AC685237CB6B800B0EA31 /* Protocols */,
+				BC7AC684237CB6B800B0EA31 /* View */,
+				BC7AC683237CB6B800B0EA31 /* WireFrame */,
+			);
+			path = GroceryDetail;
+			sourceTree = "<group>";
+		};
+		BC7AC683237CB6B800B0EA31 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				BC7AC68D237CB70A00B0EA31 /* GroceryDetailWireFrame.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		BC7AC684237CB6B800B0EA31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC7AC68B237CB6FC00B0EA31 /* GroceryDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC7AC685237CB6B800B0EA31 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BC7AC689237CB6E100B0EA31 /* GroceryDetailProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BC7AC686237CB6B800B0EA31 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BC7AC687237CB6D400B0EA31 /* GroceryDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -240,7 +292,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC323F91237C6E140056B7BE /* GroceryListInteractor.swift in Sources */,
+				BC7AC688237CB6D400B0EA31 /* GroceryDetailPresenter.swift in Sources */,
 				BC7AC67B237CABA400B0EA31 /* LocalDataStore.swift in Sources */,
+				BC7AC68E237CB70A00B0EA31 /* GroceryDetailWireFrame.swift in Sources */,
+				BC7AC68A237CB6E100B0EA31 /* GroceryDetailProtocols.swift in Sources */,
+				BC7AC68C237CB6FC00B0EA31 /* GroceryDetailView.swift in Sources */,
 				BC7AC67F237CACF900B0EA31 /* Grocery.swift in Sources */,
 				BC7AC681237CB0AA00B0EA31 /* LocalDataManager.swift in Sources */,
 				BC323F93237C71DE0056B7BE /* GroceryListWireFrame.swift in Sources */,

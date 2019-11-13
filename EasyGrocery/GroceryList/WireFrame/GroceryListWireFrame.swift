@@ -9,7 +9,7 @@
 import UIKit
 
 class GroceryListWireFrame: GroceryListWireFrameProtocol {
-    
+
     static func createGroceryListModule() -> UIViewController {
         let navController = mainStoryboard.instantiateViewController(withIdentifier: "EasyGroceryNavigationController")
         if let view = navController.children.first as? GroceryListView {
@@ -26,6 +26,13 @@ class GroceryListWireFrame: GroceryListWireFrameProtocol {
             return navController
         }
         return navController
+    }
+    
+    func presentGroceryDetailScreen(from view: GroceryListViewProtocol, for grocery: Grocery) {
+        let detailViewController = GroceryDetailWireFrame.createGroceryDetailModule(for: grocery)
+        if let sourceView = view as? UIViewController {
+            sourceView.navigationController?.pushViewController(detailViewController, animated: true)
+        }
     }
     
     static var mainStoryboard: UIStoryboard {

@@ -42,6 +42,21 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="113.83928571428571"/>
         </scene>
+        <!--Grocery Detail View-->
+        <scene sceneID="tQB-eq-J46">
+            <objects>
+                <viewController storyboardIdentifier="GroceryDetailView" id="KNp-ca-dA4" customClass="GroceryDetailView" customModule="EasyGrocery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="384-zT-7cZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="prW-hE-gFZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hw3-Q4-0JX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1932" y="114"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="yts-nq-Ryo">
             <objects>

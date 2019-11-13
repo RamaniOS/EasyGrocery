@@ -17,6 +17,10 @@ extension GroceryListPresenter: GroceryListPresenterProtocol {
     func viewDidLoad() {
         interactor?.retrieveGroceryList()
     }
+    
+    func showGroceryDetail(for grocery: Grocery) {
+        wireFrame?.presentGroceryDetailScreen(from: view!, for: grocery)
+    }
 }
 
 extension GroceryListPresenter: GroceryListInteractorOutputProtocol {

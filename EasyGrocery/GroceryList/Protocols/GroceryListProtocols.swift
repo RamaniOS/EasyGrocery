@@ -13,6 +13,8 @@ import UIKit
  */
 protocol GroceryListWireFrameProtocol: class {
     static func createGroceryListModule() -> UIViewController
+    // PRESENTER -> WIREFRAME
+    func presentGroceryDetailScreen(from view: GroceryListViewProtocol, for grocery: Grocery)
 }
 
 /*
@@ -25,6 +27,7 @@ protocol GroceryListPresenterProtocol {
     
     // VIEW -> PRESENTER
     func viewDidLoad()
+    func showGroceryDetail(for grocery: Grocery)
 }
 
 /*
