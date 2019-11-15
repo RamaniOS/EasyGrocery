@@ -14,6 +14,15 @@
                     <view key="view" contentMode="scaleToFill" id="DFI-5a-5NR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NIN-KI-Gws">
+                                <rect key="frame" x="0.0" y="38" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Contact Us" id="nUw-lz-e6W"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="a0e-4I-PFt"/>
                     </view>
