@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BDF645B237E325000A0A5C5 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDF645A237E325000A0A5C5 /* ContactUsVC.swift */; };
+		9BDF645D237E327700A0A5C5 /* SettingDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BDF645C237E327700A0A5C5 /* SettingDetails.storyboard */; };
 		BC323F61237C698D0056B7BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC323F60237C698D0056B7BE /* AppDelegate.swift */; };
 		BC323F63237C698D0056B7BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC323F62237C698D0056B7BE /* SceneDelegate.swift */; };
 		BC323F68237C698D0056B7BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC323F66237C698D0056B7BE /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BDF645A237E325000A0A5C5 /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
+		9BDF645C237E327700A0A5C5 /* SettingDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingDetails.storyboard; sourceTree = "<group>"; };
 		BC323F5D237C698D0056B7BE /* EasyGrocery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyGrocery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC323F60237C698D0056B7BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC323F62237C698D0056B7BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9BDF6459237E319F00A0A5C5 /* SettingDetails */ = {
+			isa = PBXGroup;
+			children = (
+				9BDF645A237E325000A0A5C5 /* ContactUsVC.swift */,
+				9BDF645C237E327700A0A5C5 /* SettingDetails.storyboard */,
+			);
+			path = SettingDetails;
+			sourceTree = "<group>";
+		};
 		BC323F54237C698D0056B7BE = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +102,7 @@
 				BC323F7D237C6CD00056B7BE /* GroceryList */,
 				BC7AC679237CAB9700B0EA31 /* Store */,
 				BC7AC67D237CACE800B0EA31 /* MISC */,
+				9BDF6459237E319F00A0A5C5 /* SettingDetails */,
 			);
 			path = EasyGrocery;
 			sourceTree = "<group>";
@@ -278,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BDF645D237E327700A0A5C5 /* SettingDetails.storyboard in Resources */,
 				BC323F6D237C69930056B7BE /* LaunchScreen.storyboard in Resources */,
 				BC323F6A237C69930056B7BE /* Assets.xcassets in Resources */,
 				BC323F68237C698D0056B7BE /* Main.storyboard in Resources */,
@@ -305,6 +320,7 @@
 				BC323F8D237C6DB40056B7BE /* GroceryListProtocols.swift in Sources */,
 				BC323F63237C698D0056B7BE /* SceneDelegate.swift in Sources */,
 				BC323F8B237C6D820056B7BE /* GroceryListView.swift in Sources */,
+				9BDF645B237E325000A0A5C5 /* ContactUsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
